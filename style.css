@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: auto;
+    font-family: 'Red Hat Display', sans-serif;
+}
+h2, h3{
+    font-weight: 400;
+}
+.container1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10PX;
+}
+.text > h2{
+    padding: 20px 0;
+}
+.text > p{
+    padding-bottom: 20px;
+}
+nav{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo{
+    display: flex;
+}
+.logo > i {
+    margin-right: 10px;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    background-image: url('/imagens/london.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-search{
+    width: 50%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.form-bar{
+    background-color: black;
+    color: red;
+    height: 30px;
+    width: 100%;
+    display: flex;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.align > i{
+    padding-right: 10px;
+    font-size: 15px;
+}
+.flight{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+}
+.hotel{
+    width: 100%;
+    height: 100%;
+}
+.rental{
+    width: 100%;
+    height: 100%;
+}
+.travel-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.travel-form > h2{
+    margin: 10px 0;
+}
+.form{
+    display: flex;
+}
+.from-to{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.from-to > input{
+    width: 95%;
+    height: 30px;
+    margin: 3px 0;
+    border: 1px solid rgb(98, 98, 98);
+    padding: 0 5px;
+}
+.btn-search{
+    width: 190px;
+    height: 40px;
+    background-color: rgb(86, 86, 86);
+    border: none;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/*CONTAINER 1*/
+.sub-container{
+    width: 80%;
+    height: 100%;
+}
+.pictures-container1{
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 16fr repeat(2, 5fr);
+    grid-template-rows: repeat(2, 18.5fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+.base{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pics1{
+    position: relative;
+    grid-area: 1 / 1 / 3 / 2;
+    background-image: url('/imagens/cinqueterre.jpg');
+}
+.pics1 > figcaption{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 325px;
+    left: 10px;
+}
+.legend{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 145px;
+    left: 10px;
+}
+.pics2{
+    position: relative;
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url('/imagens/newyork.jpg');
+}
+.pics3{
+    position: relative;
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url('/imagens/pisa.jpg');
+}
+.pics4{
+    position: relative;
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url('/imagens/sanfran.jpg');
+}
+.pics5{
+    position: relative;
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url('/imagens/paris.jpg');
+}
+/*CONTAINER 2*/
+.pictures2-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 7fr 3fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+.pics6{
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url('/imagens/ocean.jpg');
+}
+.pics7{
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url('/imagens/mountains.jpg');
+}
+.row8{
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 10px;
+}
+.row8 > h3{
+    margin-bottom: 10px;
+}
+.row8 > p{
+    margin-bottom: 10px;
+}
+.row9{
+    grid-area: 2 / 2 / 3 / 3;
+    padding-left: 10px;
+}
+.row9 > h3{
+    margin-bottom: 10px;
+}
+.row9 > p{
+    margin-bottom: 10px;
+}
+.paragraph{
+    font-weight: lighter;
+}
+.btn-tickets{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/*CONTAINER 3*/
+.sub-container3{
+    width: 80%;
+    height: auto;
+    background-color: rgb(89, 89, 89);
+    color: white;
+}
+.padding-container3{
+    padding-left: 10px;
+}
+.text-container3{
+    padding: 20px 0;
+}
+.text-container3 > p{
+    padding-top: 10px;
+    font-size: 13px;
+}
+.form-email{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe > input{
+    width: 99%;
+    height: 30px;
+    padding: 0 5px;
+}
+.btn-subscribe{
+    margin: 10px 0;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(251, 102, 102);
+    border: none;
+    color: white;
+}
+/*CONTAINER 4*/
+
+.sub-container4{
+    width: 80%;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.h2-contact{
+    margin-bottom: 20px;
+}
+.p-contact{
+    margin-bottom: 10px;
+}
+.contact-base{
+    display: flex;
+    padding: 2px 0;
+    font-size: 12px;
+}
+.contact-base > i{
+    padding-right: 15px;
+}
+.send-mesage{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.send-mesage > input{
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.send-mesage > button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    padding: 10px 5px;
+}
+footer{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.find-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.find-us > h3{
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.social{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.powered, h4, span{
+    font-weight: 300;
+}
+.margin{
+    height: 400px;
+}
